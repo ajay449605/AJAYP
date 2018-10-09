@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+    {
+        color:black;
+        background-color:white;
+    }
+input[type=text],select
+{
+    width:10%;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border-radius:2px;
+    box-sizing:content-box;
+}
+input[type=submit]
+{
+    
+    background-color:darkred;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius:2px;
+    cursor:pointer;
+    width: inherit;
+    border-radius: 8px;
+}
+input[type=submit]:hover
+{
+    background-color:#45a049;
+}
+input[type=reset]
+{
+    background-color:darkred;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius:2px;
+    cursor:pointer;
+    width: inherit;
+    border-radius: 8px;
+}
+input[type=reset]:hover
+{
+    background-color:#45a049;
+} 
+    
+div
+{
+border-radius:5px;
+background-color:lightseagreen;
+padding:20px;
+}
+    </style></head>
+<body>
+
+<h2 style="color:darkred"align="center"><b>Add Consignment</b></h2>
+
+<div>
+    <form action="consignment.php" method="post">
+        
+        <label for="consid"><b>Consignment_Id</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname"name="consid"placeholder="Enter consignment_id..">
+        
+        &emsp;&ensp;&#8195; <label for="bid"><b>Branch_Id</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="lname"name="bid"placeholder="Enter Branch_id.."><br><br>        
+            
+      
+        
+        
+          <label for="fromcity"style="width:100%;"><b>From city</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&ensp;&#8195; &emsp;&ensp;&#8195; 
+        <input type="text" id="lname"name="fromcity"placeholder="Enter city..">
+        
+         &emsp; &ensp;&#8195; <label for="tocity"style="width:100%;"><b>To city</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&emsp; &emsp;&ensp;&#8195; 
+        <input type="text" id="lname"name="tocity"placeholder="Enter city ..">
+       <br><br>
+        
+
+        
+        
+        <input type="submit" value="Submit" >
+        <input type="reset" value="Reset">
+        
+    </form>
+</div>
+</body>
+</html>

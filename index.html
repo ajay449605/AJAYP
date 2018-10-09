@@ -1,0 +1,217 @@
+<html>
+<head>
+    <title>A&N COURIER</title>
+    <!--link href="style.css" rel="stylesheet" type="text/css"-->
+    <style>
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: tahoma;
+}
+
+
+.row
+{
+    max-width: 1140px;
+    margin: 0,auto;
+}
+.hero
+{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header
+{
+ background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(index_image.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+h1
+{
+    color: deepskyblue;
+}
+
+.main-nav
+{
+    list-style: none;
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li
+{
+   display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+
+.main-nav li a:hover
+{
+    color: blue;
+    border-bottom: 2px solid #e67e22;
+    transition: 0.5s ease-in;
+    padding: 15px 0;
+    
+}
+.logo img
+{
+    height: 100px;
+    float: left;
+    margin-top: 30px; 
+}
+
+
+.btn
+{
+    border: 1px solid #e67e22;
+    padding: 10px 30px;
+    color: #e67e22;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-right: 15px;
+}
+
+.button-awesome
+{
+    margin-top: 40PX;
+    
+}
+
+.btn-half:hover
+{
+    background-color: #e67e22;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+.btn-full:hover
+{
+    background-color: #e67e22;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+ .ansu
+{
+  border:1px solid black;
+  margin-right:50px;
+  height:5cm;
+  width:41.10cm;
+  height:6cm;
+  background:url("galaxy-2643089_960_720.jpg");
+  background-size:cover;
+ background-position:no repeat-x;
+ font-family:Raleway-Regular;
+ 
+}     
+        img-width
+        {
+            background-size:cover;
+        }
+        
+</style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="row">
+        <ul class="main-nav">   
+            <li><a href="#aboutus">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#terms">TERMS & CONDITIONS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            
+        </ul>    
+        
+        
+        </div>
+    <div class="hero">
+        <h1 >A&N COURIER MANAGEMENT <br>SERVICES</h1>  
+        <div class="button-awesome">
+        <a href="login.php" class="btn btn-half">LOG IN</a>
+        <a href="register.php" class="btn btn-full">SIN UP</a>
+        <a href="Shipment_track/track_shipment.php" class="btn btn-full">Track Shipment</a>
+            </div>
+    </div>
+    </header>
+    
+    
+    <?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success']; 
+          	unset($_SESSION['success']);
+          ?>
+      	</h3>
+      </div>
+    
+   <p style="background-color:Lightgray;color:blue"><marquee>CONTACT US:+91 7678907890,   EMAIL_ID:jmr449605@gmail.com</marquee></p> 
+<!---Foooter code----------------------------->
+    
+    <footer>   
+  <div id="aboutus" class="container-fluid">      
+<article class="aboutus" style="background-color:lightyellow;margin:0px 2px 0px 2px;"> 
+  <h2 align="center" style="color:red;">ABOUT US</h2><br>
+  <p align="justify">The Professional Couriers offers a comprehensive range of solutions to the requirements of delivery of Documents/Non-Documents, all types of cargo  high value, critical and urgent shipments all over India and any part of the World. Based on the specific requirements of each individual or corporate the company provides.</p>
+  <hr>
+</article>
+</div>
+<div id="services" class="container-fluid">
+<article class="services" style="background-color:lightblue;margin:0px 2px 0px 2px;"> 
+  <h2 align="center" style="color:red">SERVICES</h2><br>
+  <p align="justify">At DFDS, we believe that safe, secure and timely service is what makes DFDS a leading Express, Distribution & Logistics company in India. DFDS offers a combination of Premium Express Services, Logistics and Warehousing Services and International Express and Cargo Services.
+Conforming to our mantra 'Delivering Value', the company offers innovative and superior services worldwide. DFDS also provides a variety of customized solutions, with an eye on its customers' distinct requirements.
+</p>
+  <hr>
+</article>
+ </div>    
+        
+    <div id="terms" class="container-fluid">
+<article class="terms" style="background-color:lightgreen;margin:0px 2px 0px 2px;"> 
+  <h2 align="center" style="color:red">TERMS & CONDITIONS</h2><br>
+  <p align="justify">Conditions of Carriage
+Applicability the provision set out and referred to in this consignment note shall apply to modes of transport used by DTDC for connection of consignments. They also apply if the mode of transport as described on the face of this consignment note is contrary to the original contract between the parties or performed by one or more modes of transport which may not the defined mode of delivery of the consignment as agreed in this consignment note.</p>
+  <hr>
+</article>
+        </div>
+<div id="contact" class="container-fluid">
+<section class="contact" style="background-color:lightgray;"> 
+  <h2 align="center" style="color:red">CONTACT US</h2><br>
+  <p align="center"><b>A&N COURIER MANAGEMENT SERVICES</b></p>
+<p align="center"><span class="glyphicon glyphicon-map-marker"></span> &nbsp<b>T.T. Nagar,Bhopal (M.P) India</b></p>
+<p align="center"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp<b> Pincode No. 462003</b></p>
+<p align="center"><span class="glyphicon glyphicon-earphone"></span> &nbsp<b>Contact No. 9893114371</b></p>
+<p align="center"><span class="glyphicon glyphicon-envelope"></span> &nbsp<b>Email Id - Nekramprajapatics@gmail.com</b></p>
+  <hr>
+</section>
+        </div>
+        
+<div class="container well">    
+      <div class="img-width">   
+     <iframe margin-right="0px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17439.482639387046!2d77.3863426260888!3d23.235822329743637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42b958135cf3%3A0x780e7ec18a043141!2sTT+Nagar%2C+Bhopal%2C+Madhya+Pradesh%2C+India!5e0!3m2!1sen!2sus!4v1523203338051" width="1350" height="300" frameborder="0" style="border:0"flaot="right;" allowfullscreen></iframe>
+        </div> 
+    </div>
+        
+    </footer>
+    <p style="background-color:Lightgray;color:black;"><marquee>POWERED BY: A&N COURIER MANAGEMENT SERVICES</marquee></p>  
+</body>
+</html>

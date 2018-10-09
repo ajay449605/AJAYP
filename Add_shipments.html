@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head >
+<style>
+body
+    {
+        color:black;
+        background-color:blue;
+    }
+input[type=text],select
+{
+    width:10%;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border-radius:2px;
+    box-sizing:content-box;
+    font-family: sans-serif;
+}
+input[type=submit]
+{
+    
+    background-color:darkred;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+    width: inherit;
+}
+input[type=submit]:hover
+{
+    background-color:#45a049;
+}
+input[type=reset]
+{
+    
+    background-color:darkred;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+    width: inherit;
+}
+input[type=reset]:hover
+{
+    background-color:#45a049;
+} 
+    
+div
+{
+border-radius:5px;
+background-color:silver;
+padding:20px;
+}
+    </style></head>
+<body>
+
+<h2 style="color:white"align="center"><b>ADD SHIPMENT</b></h2>
+
+<div>
+    <form action="shipment.php" method="post" >
+        
+        <label for="shid"><b>Shipment_Id</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname"name="shid"placeholder="Enter Shipment_id..">
+        
+        
+        <label for="consid"><b>Consignment_Id</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <input type="text" id="lname"name="consid"placeholder="Enter Consignment_id">
+        <br><br>
+        
+         <label for="custid"><b>Customer_Id</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="lname"name="custid"placeholder="Enter Customer_id..">
+        
+        
+        <label for="empid"><b>Employee_Id</b></label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="lname"name="empid"placeholder="Enter employee_id">
+        <br><br>
+        
+         <label for="shtype"><b>Shipment_Type</b></label>
+       &nbsp;&nbsp;&nbsp; <input type="text" id="lname"name="shtype"placeholder="Enter Shipment_type..">
+        
+        
+        <label for="shweight"><b>Shipment_weight(gm)</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname"name="shweight"placeholder="Enter shipment_weight(gm)..">
+        <br><br>
+        
+         <label for="shquantity"><b>Shipment_quantity</b></label>
+        <input type="text" id="lname"name="shquantity"placeholder="Enter shipment_quantity..">
+        
+        
+        <label for="shprice"><b>Shipment_price</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <input type="text" id="lname"name="shprice"placeholder="Enter shipment_price">
+        <br><br>
+        
+         <label for="receiver"><b>Receiver_name</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname"name="receiver"placeholder="Enter Receiver_name..">
+        
+        
+        <label for="contact"><b>Receiver_Mob_No.</b></label>
+        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="lname"name="contact"placeholder="Enter receiver_contact no..">
+        <br><br>
+        
+         <label for="add"style="width:100%;"><b>Receiver Address</b></label>
+        &nbsp;&nbsp;&nbsp;<input type="text"id="lname"name="add"placeholder="Enter Address.."style="width:40%;">
+        <br><br>
+        
+        <label for="state"><b>Select State:</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="lname" name="state">
+        
+        <option value="utter pradesh">Utter Pradesh</option>
+        <option value="uttarakhand">Uttarakhand</option>
+        <option value="bihar">Bihar</option>
+        <option value="maharashtra">Maharashtra</option>
+         <option value="madhya praddesh">Madhya Pradesh</option>
+        <option value="tamilnadu">Tamilnadu</option>
+        <option value="kerla">Kerla</option>
+        </select>
+        
+        <label for="city"style="width:100%;"><b>Receiver City</b></label>
+        <input type="text"id="lname"name="city"placeholder="Enter receiver_city.."style="width:20%;">
+        <br><br>        
+        
+
+         
+        <label for="pincode"><b>Receiver_pin_code</b></label>
+        <input type="text" id="lname"name="pincode"placeholder="Enter receiver_pin_code..">
+        
+            
+        <label for="bookingtime"style="width:100%;"><b>Shipment Booking_time</b></label>
+        <input type="text" id="lname"name="bookingtime"placeholder="Enter booking time..">
+        
+        <label for="bookingdate"style="width:100%;"><b>Shipment Booking_date</b></label>
+        <input type="text" id="lname"name="bookingdate"placeholder="Enter booking date..">
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+    {
+        color:red;
+        background-color: lightgray;
+    }
+    
+    
+ 
+div
+{
+border-radius:5px;
+background-color:lightgoldenrodyellow;
+padding:20px;
+}
+    </style></head>
+<body>
+
+<h2 style="color:darkred"align="center"><b>Delete Branch</b></h2>
+
+<div>
+    <form action="close_branch.php" method="post">        
+        
+       <label for="bid"><b>Select Branch_Id:</b></label>
+        <?php
+        $branchid="select b_id from branch";
+        $result=mysqli_query($conn,$branchid);
+        while($id=mysqli_fetch_assoc($result))
+       {
+         echo $ID=$id['b_id'];
+           echo $ID;
+           echo "<br>";
+       }
+    ?>
+        <select id="bid" name="bid">
+        
+        <option value="0">0</option>
+        <option value="101">101</option>
+        <option value="102">102</option>
+        <option value="103">104</option>
+         <option value="104">104</option>
+        <option value="201">201</option>
+        <option value="202">202</option>
+        <option value="302">302</option>
+        <option value="303">303</option>
+        <option value="304">304</option>
+         <option value="401">401</option>
+        <option value="501">501</option>
+        <option value="601">601</option>
+        <option value="701">701</option>
+        <option value="705">705</option>
+        </select>  
+        <br><br>
+        <input class="btn btn-half"type="delete" value="Delete">
+        
+    </form>
+</div>
+</body>
+</html>

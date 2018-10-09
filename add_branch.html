@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+    {
+        color:red;
+        background: url(delivery-boy-carrying-box-14891699.jpg);
+    }
+input[type=text],select
+{
+    width:10%;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border-radius:2px;
+    box-sizing:content-box;
+}
+input[type=submit]
+{
+    
+    background-color:darkred;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+    width: inherit;
+}
+input[type=submit]:hover
+{
+    background-color:#45a049;
+}
+    
+input[type=reset]
+{
+    
+    background-color:darkred;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+    width: inherit;
+}
+input[type=reset]:hover
+{
+    background-color:#45a049;
+}
+    
+    
+div
+{
+border-radius:5px;
+background-color:lightgoldenrodyellow;
+padding:20px;
+}
+    </style></head>
+<body>
+
+<h2 style="color:darkred"align="center"><b>Add New Branch</b></h2>
+
+<div>
+    <form action="add_branch.php" method="post">
+        
+        <label for="bid">Branch_Id</label>
+        &nbsp;&nbsp;<input type="text" id="bid"name="bid"placeholder="Enter branch_id..">
+        
+        
+       &nbsp; <label for="bname"style="width:100%;">Branch Name</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"id="bname"name="bname"placeholder="Enter branch name.."style="width:40%;">
+        <br><br>            
+
+         
+        <label for="bcity">Branch City</label>
+        <input type="text" id="bcity"name="bcity"placeholder="Enter city..">
+        
+        
+        &nbsp;<label for="bpincode">Branch_Pin_Code</label>
+        <input type="text" id="bpincode"name="bpincode"placeholder="Enter pin code..">
+        <br><br>
+        
+        <label for="badd"style="width:100%;">Branch Address</label>
+        <input type="text"id="badd"name="badd"placeholder="Enter address.."style="width:70%;">
+        <br><br>
+        
+        <label for="state">State:</label>
+        <select id="state" name="state">
+        
+        <option value="utter pradesh">Utter Pradesh</option>
+        <option value="j&k">J&K</option>
+        <option value="bihar">Bihar</option>
+         <option value="madhya praddesh">Madhya Pradesh</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="kerla">Kerla</option>
+        </select>
+        
+         <label for="btime"style="width:100%;">Branch timing:</label>
+        <input type="text" id="btime"name="btime" placeholder="Enter timing.."style="width:30%;">
+        <br><br>
+
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+    </form>
+</div>
+</body>
+</html>
